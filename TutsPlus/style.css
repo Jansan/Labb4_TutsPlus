@@ -1,21 +1,20 @@
-body
-{
-    background:#af6704;
-    font-family:sans-serif;
+body {
+    background: #033a3c;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .container {
     background: #fff;
-    min-height: 400px;
-    
+    min-height: 900px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
     width: 100%;
 }
 
-header{
+header {
     background: #034c4e;
     height: 90px;
     padding: 10px;
@@ -24,22 +23,24 @@ header{
 #logo {
     width: 20%;
     float: left;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
     padding: 5px;
-    
     border-radius: 10px;
 }
-#logo h1 {
-    color: #fce3b3;
-    text-align: center;
-    margin-bottom: -15px
-}
-#logo p {
-    text-align: center;
-    color:burlywood;
-    font-family: monospace;
-}
+
+    #logo h1 {
+        color: #fce3b3;
+        text-align: center;
+        margin-bottom: -15px;
+    }
+
+    #logo p {
+        text-align: center;
+        color: burlywood;
+        font-family: monospace;
+    }
+
 .tuts {
     color: cadetblue;
 }
@@ -49,30 +50,69 @@ nav {
     text-align: left;
     float: left;
     margin-left: 50px;
-    font-family: sans-serif;  
+    font-family: sans-serif;
     margin-top: 20px;
     padding-top: 0;
     border-radius: 10px;
 }
-nav ul {
-    list-style-type: none;
-    
-}
-nav ul li {
-    display: inline-block;
+
+    nav ul {
+        list-style-type: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+            width: 20%;
+            margin-right: 10px;
+            padding: 2px;
+        }
+
+            nav ul li a {
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+            }
+
+            nav ul li:hover {
+                background: #2b7779;
+                border-radius: 3px;
+            }
+
+.block1, .block2 {
+    width: 30.83%;
+    padding: 5px;
+    float: left;
+    height: 200px;
+    background: cadetblue;
+    margin-left: 15px;
+    margin-top: 20px;
     text-align: center;
-    width: 20%;
-    margin-right: 10px;
-    padding: 2px;
-    
-    
+    margin-bottom: 20px;
 }
-nav ul li a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
+
+.block3 {
+    float: left;
+    width: 30.83%;
+    padding: 5px;
+    height: 200px;
+    background: cadetblue;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-nav ul li:hover {
-    background: #2b7779;
-    border-radius: 3px;
+
+.banner {
+    clear: both;
+    max-width: 460px;
+    margin: 20px;
 }
+
+    .banner img {
+        width: 468px;
+        display: block;
+        text-align:center;
+        height:80px;
+    }

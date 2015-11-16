@@ -1,47 +1,77 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>TutsPlus - A Tutorial Portal</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     
-    
-    
-    </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="wrapper">
         <header>
             <div id="logo">
                 <h1><span class="tuts">Tuts</span>Plus</h1>
                 <p>A Tutorial World</p>
-        
+
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                
-            
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+
                 </ul>
-        
-        
+
+
             </nav>
-       </header> <!--end of header-->
+        </header> <!--end of header-->
         <div id="slideshow">
-            <img src="slide1.jpg" width="1200" height="500"/>
-        
-        
-        
-        
+            <img src="slide1.jpg" width="1200" height="500" />
+
+        </div><!--end of slideshow-->
+
+    <!--Floated Boxes block1,block2,block3-->
+        <div class="block1" id="tuts">
+            <h3>Tutorials</h3>
+            <p id="details1"></p>
+            <p id="details2"></p>
         </div>
-    
-    
-    
+        <div class="block2">
+            <h3>About TutsPlus</h3>
+        </div>
+        <div class="block3">
+            <h3>Customer Support!</h3>
+        </div>
+
+    <!--creating a object with javascript-->
+        <script>
+            var course1 = { courseName: "Photoshop CC", startDate: "22 Nov 15" };
+            var course2 = { courseName: "WordPress", startDate: "12 Dec 15" };
+
+document.getElementById("details1").innerHTML =
+course1.courseName + ", " + "Starts: " + course1.startDate;
+document.getElementById("details2").innerHTML =
+course2.courseName + ", " + "Starts: " + course2.startDate;
+        </script>
+
+        <!--creating a element with javascript-->
+        <script>
+            var div = document.createElement('div');
+            
+            var container = document.getElementById('wrapper');
+            div.clientWidth = "500px";
+            div.align = "center";
+            div.textContent = 'Advertisments';
+            div.innerHTML = '<img src="banner.jpg"/>';
+            div.setAttribute('class', 'banner');
+            container.appendChild(div);
+
+        </script>
+
+
     </div><!--end of container-->
 </body>
 </html>
