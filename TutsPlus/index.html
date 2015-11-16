@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>TutsPlus - A Tutorial Portal</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    
+
 </head>
 <body>
     <div class="container" id="wrapper">
@@ -32,8 +32,7 @@
             <img src="slide1.jpg" width="1200" height="500" />
 
         </div><!--end of slideshow-->
-
-    <!--Floated Boxes block1,block2,block3-->
+        <!--Floated Boxes block1,block2,block3-->
         <div class="block1" id="tuts">
             <h3>Tutorials</h3>
             <p id="details1"></p>
@@ -46,21 +45,21 @@
             <h3>Customer Support!</h3>
         </div>
 
-    <!--creating a object with javascript-->
+        <!--creating a object with javascript-->
         <script>
             var course1 = { courseName: "Photoshop CC", startDate: "22 Nov 15" };
             var course2 = { courseName: "WordPress", startDate: "12 Dec 15" };
 
-document.getElementById("details1").innerHTML =
-course1.courseName + ", " + "Starts: " + course1.startDate;
-document.getElementById("details2").innerHTML =
-course2.courseName + ", " + "Starts: " + course2.startDate;
+            document.getElementById("details1").innerHTML =
+            course1.courseName + ", " + "Starts: " + course1.startDate;
+            document.getElementById("details2").innerHTML =
+            course2.courseName + ", " + "Starts: " + course2.startDate;
         </script>
 
         <!--creating a element with javascript-->
         <script>
             var div = document.createElement('div');
-            
+
             var container = document.getElementById('wrapper');
             div.clientWidth = "500px";
             div.align = "center";
@@ -71,6 +70,12 @@ course2.courseName + ", " + "Starts: " + course2.startDate;
 
         </script>
 
+    <footer>
+        <p>&copy; 2015 TutsPlus. All rights reserved.</p>
+
+
+
+    </footer>
 
     </div><!--end of container-->
 </body>
