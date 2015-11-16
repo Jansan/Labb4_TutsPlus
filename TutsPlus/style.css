@@ -1,0 +1,32 @@
+﻿body{
+    background:#808080;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+}
+
+h1 h2 li{
+    color:lightpink;
+}
+a{
+    color:palegoldenrod;
+}
+p{
+    background:#705b5b;
+    color:#ffffff;
+    padding: 10px;
+
+}
+.secodary{
+    background:none;
+    color:darkgrey;
+}
+p{
+    background:#705b5b;
+    color:white;
+    padding:10px;
+}
+#special{
+    background:none;
+    color:palegoldenrod;
+    padding:10px;
+}
