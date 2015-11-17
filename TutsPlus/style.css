@@ -116,3 +116,13 @@ nav {
         text-align:center;
         height:80px;
     }
+
+    footer{
+        height:100px;
+        background:#034c4e;
+        color:white;
+        text-align:center;
+    }
+    footer p {
+        padding-top:40px;
+    }
