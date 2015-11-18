@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Tutorials</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="animation.js"></script>
 
 </head>
 <body>
@@ -29,79 +30,61 @@
             </nav>
         </header> <!--end of header-->
 
-    <!--Text animation start-->
-    <div id="myTypingText"></div>
-    <script type="text/javascript" language="javascript">
-        var myString ="HTML & CSS TUTORIALS.";
-        var myArray = myString.split("");
-        var loopTimer;
-        function frameLooper(){    
+        <!--Text animation start id-->
+        <div id="myTypingText"></div>
 
-            if(myArray.length>0){
-                document.getElementById("myTypingText").innerHTML +=myArray.shift();
-            } else {
-                clearTimeout(loopTimer);
-        }
-        loopTime=setTimeout('frameLooper()',70);
+        
+        
+        
 
-        }
-        frameLooper();
-    </script> 
-        <!--Text animation finish-->
-
-
-        <!--Star tutorials videos here-->
-
-        <div class="h3">
-            <h3>HTML & CSS TUTORIALS</h3>
-        </div>
+        <!-- Star tutorials videos here -->
         <div class="tutorials">
 
             <table style="width:100%">
                 <tr>
                     <td>
-                        <p>Build a Full HTML Site Layout </p>
+                        <p id="heading_p">Build a Full HTML Site Layout </p>
                         <iframe width="420" height="315"
                                 src="https://www.youtube.com/embed/hD8wAdicAbs" frameborder="0"></iframe>
                     </td>
                     <td>
                         <p>HTML Tutorial for Beginners </p>
                         <iframe width="420" height="315"
-                                 src="https://www.youtube.com/embed/v4oN4DuR7YU" frameborder="0" allowfullscreen></iframe>
+                                src="https://www.youtube.com/embed/v4oN4DuR7YU" frameborder="0" allowfullscreen></iframe>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
                         <p>CSS Tutorial for Beginners  </p>
-                        <iframe width="420" height="315" 
+                        <iframe width="420" height="315"
                                 src="https://www.youtube.com/embed/Wz2klMXDqF4" frameborder="0" allowfullscreen></iframe>
                     </td>
 
                     <td>
                         <p>HTML and CSS Tutorial Create Your own Complete Website </p>
                         <iframe width="420"
-                                 height="315" src="https://www.youtube.com/embed/BxUv_n3T7n0" frameborder="0" allowfullscreen></iframe>
+                                height="315" src="https://www.youtube.com/embed/BxUv_n3T7n0" frameborder="0" allowfullscreen></iframe>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
                         <p>How to Master CSS </p>
-                        <iframe width="420" height="315" 
+                        <iframe width="420" height="315"
                                 src="https://www.youtube.com/embed/Vafp5xr_bxk" frameborder="0" allowfullscreen></iframe>
                     </td>
 
                     <td>
                         <p>CSS Tricks : CSS Problems Solved </p>
-                        <iframe width="420" height="315" 
+                        <iframe width="420" height="315"
                                 src="https://www.youtube.com/embed/mqLI2oN6rXQ" frameborder="0" allowfullscreen></iframe>
                     </td>
 
                 </tr>
             </table>
- </div>
-
+        </div>
+        <!-- end tutorials videos here -->
 
 
 
