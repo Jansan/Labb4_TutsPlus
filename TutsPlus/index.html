@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <title>TutsPlus - A Tutorial Portal</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="objects.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+
 
 </head>
 <body>
@@ -17,12 +21,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="tutorials.html">Tutorials</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-
-
                 </ul>
 
 
@@ -39,43 +41,54 @@
             <p id="details2"></p>
         </div>
         <div class="block2">
-            <h3>About TutsPlus</h3>
+            <button onclick="about()"><h3>About TutsPlus</h3></button>
+            <p style="display: none">TutsPlus is founded on 2008 and its provide world class tutorial videos.</p>
+
+            <!--jquery works-->
+            <script>
+                $("button").click(function () {
+                    $("p").show("slow");
+                });
+            </script>
+
         </div>
         <div class="block3">
-            <h3>Customer Support!</h3>
+            <h3 title="">Customer Support!</h3>
+            <div id="formDrop">Click here to contact us.</div>
+            <div id="form">
+                <form>
+                    
+                    <input id="name"name="name" placeholder="Name:" /><br/>
+                    
+                    <input id="name" name="name" type="email" placeholder="Email:" /><br />
+                    
+                    <textarea cols="21" rows="2" placeholder="Message:"></textarea><br/>
+                    <button type="submit" value="Submit">Send</button>
+
+                </form>
+
+            </div>
+
+            <script>
+
+                $(document).ready(function () {
+                    $("#formDrop").click(function () {
+                        $("#form").slideToggle("slow");
+                    });
+                });
+            </script>
         </div>
 
+
+
+
         <!--creating a object with javascript-->
-        <script>
-            var course1 = { courseName: "Photoshop CC", startDate: "22 Nov 15" };
-            var course2 = { courseName: "WordPress", startDate: "12 Dec 15" };
-
-            document.getElementById("details1").innerHTML =
-            course1.courseName + ", " + "Starts: " + course1.startDate;
-            document.getElementById("details2").innerHTML =
-            course2.courseName + ", " + "Starts: " + course2.startDate;
-        </script>
-
-        <!--creating a element with javascript-->
-        <script>
-            var div = document.createElement('div');
-
-            var container = document.getElementById('wrapper');
-            div.clientWidth = "500px";
-            div.align = "center";
-            div.textContent = 'Advertisments';
-            div.innerHTML = '<img src="banner.jpg"/>';
-            div.setAttribute('class', 'banner');
-            container.appendChild(div);
-
-        </script>
-
-    <footer>
-        <p>&copy; 2015 TutsPlus. All rights reserved.</p>
 
 
+        <footer>
+            <p>&copy; 2015 TutsPlus. All rights reserved.</p>
 
-    </footer>
+        </footer>
 
     </div><!--end of container-->
 </body>

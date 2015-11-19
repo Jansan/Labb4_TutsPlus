@@ -78,6 +78,9 @@ nav {
                 background: #2b7779;
                 border-radius: 3px;
             }
+            .active {
+                background: #2b7779;
+            }
 
 .block1, .block2 {
     width: 30.83%;
@@ -117,6 +120,7 @@ nav {
         height:80px;
     }
     footer {
+        clear:both;
         height:100px;
          background: #034c4e;
          color:white;
@@ -125,3 +129,11 @@ nav {
     footer p {
         padding-top:40px;
     }
+
+    #form {
+        display:none;
+        
+    }
+   form input {
+       margin-bottom:5px;
+   }
