@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.csbs" />
+</head>
+<body>
+    <ul id="grid">
+        <li><a href="http://tutsplus.com"<img src"images/ylw.jpg" alt="yellow"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/org.jpg" alt="orange"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/ppl.jpg" alt="purple"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/blu.jpg" alt="blue"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/pnk.jpg" alt="pink" id="pink"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/grn.jpg" alt="green"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/ygr.jpg" alt="ygreen"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/gry.jpg" alt="gray"></a></li>
+        <li><a href="http://tutsplus.com"<img src"images/red.jpg" alt="red"></a></li>
+    </ul>
+    <script>
+        document.getElementById('grid').addEventListener('click', function(e) {
+            console.log("Clicked inside the UL");
+        }, false);
+
+        document.getElementById('pink').addEventListener('click', function (e) {
+            console.log(e.toElement.alt);
+            e.stopPropagation();
+        }, false);
+        
+   
+    
+     </script>
+
+</body>
+</html>

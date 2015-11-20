@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-2.1.4.js"></script>
+    <script src="animation.js"></script>
+
+
+</head>
+<body>
+    <div class="container" id="wrapper">
+        <header>
+            <div id="logo">
+                <h1><span class="tuts">Tuts</span>Plus</h1>
+                <p>A Tutorials World</p>
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+
+                </ul>
+
+
+            </nav>
+        </header> <!--end of header-->
+        <!--Text animation start id-->
+        <div id="myTypingText"></div>
+
+
+
+
+
+
+
+        <!-- Star tutorials videos here -->
+        <div class="tutorials">
+
+            <table style="width:100%">
+                <tr>
+                    <td>
+
+
+                        <p id="heading_p">
+
+
+
+                        </p>
+
+                        <!--jquery-->
+                        <button id="hide" style="display:none;">Hide Video</button>
+                        <a href="#"><img src="videot.png" width="420" height="315" id="videoImg" title="Click to play" /></a>
+
+                        <p style="display: none" id="video">
+
+                            <iframe width="420" height="315" 
+                                    src="https://www.youtube.com/embed/hD8wAdicAbs" frameborder="0" allowfullscreen></iframe>
+                        </p>
+
+                        <script>
+                            $("#videoImg").click(function () {
+
+                                $("#video").show("slow")
+
+                                $("#hide").show("slow")
+                                $("#videoImg").hide("slow")
+
+                            });
+
+                            $("#hide").click(function () {
+                                $("#video").hide("slow")
+                                $("#videoImg").show("slow")
+                                $("#hide").hide("slow")
+
+                            });
+
+                        </script>
+
+
+                    </td>
+                    <td>
+                        <!--jquery-->
+                        <p>HTML Tutorial for Beginners </p>
+                        <button id="hide1" style="display:none;">Hide Video</button>
+                        <a href="#"><img src="videou.png" width="420" height="315" id="videoImg1" title="Click to play" /></a>
+
+                        <p style="display: none" id="video1">
+
+                            <iframe width="420" height="315"
+                                    src="https://www.youtube.com/embed/v4oN4DuR7YU" frameborder="0" allowfullscreen></iframe>
+                        </p>
+
+                        <script>
+                            $("#videoImg1").click(function () {
+
+                                $("#video1").show("slow")
+
+                                $("#hide1").show("slow")
+                                $("#videoImg1").hide("slow")
+
+                            });
+
+                            $("#hide1").click(function () {
+                                $("#video1").hide("slow")
+                                $("#videoImg1").show("slow")
+                                $("#hide1").hide("slow")
+
+                            });
+
+                        </script>
+                        
+                        
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p>CSS Tutorial for Beginners  </p>
+                        <iframe width="420" height="315"
+                                src="https://www.youtube.com/embed/Wz2klMXDqF4" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                    <td>
+                        <p>HTML and CSS Tutorial Create Your own Complete Website </p>
+                        <iframe width="420"
+                                height="315" src="https://www.youtube.com/embed/BxUv_n3T7n0" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p>How to Master CSS </p>
+                        <iframe width="420" height="315"
+                                src="https://www.youtube.com/embed/Vafp5xr_bxk" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                    <td>
+                        <p>CSS Tricks : CSS Problems Solved </p>
+                        <iframe width="420" height="315"
+                                src="https://www.youtube.com/embed/mqLI2oN6rXQ" frameborder="0" allowfullscreen></iframe>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <!-- end tutorials videos here -->
+        <!--Footer area here ------>
+        <footer>
+            <p>&copy; 2015 TutsPlus. All right reserved.</p>
+
+        </footer>
+
+
+
+
+
+    </div> <!--end of container-->
+</body>
+</html>
