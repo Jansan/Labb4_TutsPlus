@@ -1,10 +1,10 @@
 // JavaScript ANIMATION source code 
 
-//Text animation start here
+
 
 window.onload = function () {
 
-
+    //Text animation start here
     var myString = "HTML & CSS TUTORIALS.";
     var myArray = myString.split("");
 
@@ -20,9 +20,36 @@ window.onload = function () {
         }, 70);
     };
 
-    frameLooper();
+    frameLooper(); //end animation code block
+
+    //Error Handling for title printing
+    var title = "Build a Full HTML Site Layout";
+
+    try {
+        var p = document.getElementById("heading_p");
+        p.innerHTML = title;
+
+        
+
+    }
+    catch (e) {
+        alert("Error: " + e.description);
+        
+    }
+    finally {
+        alert("First Video's title successfully printed!");
+        var p = document.getElementById("heading_p").innerHTML = a;
+
+    } // end error handling code
+
   
-}  //Text animation end here
+} 
+
+
+
+                           
+
+                        
 
 
 
