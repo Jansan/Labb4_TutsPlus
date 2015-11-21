@@ -1,11 +1,110 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>TutsPro - A Tutorial Portal</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="objects.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+
+
 </head>
 <body>
+    <div class="container" id="wrapper">
+        <header>
+            <div id="logo">
+               <img src="logo.png" width="200" alt="TutsPro"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contactus.html"  class="active">Contact Us</a></li>
+                </ul>
 
+
+            </nav>
+        </header> <!--end of header-->
+        <div class="main_contents">
+            <h2>Contact Us</h2>
+            <div class="contact_text"> <p>We are here to answer any questions you may have about our TutsPro experiences. Reach out to us and we'll respond as soon as we can.</p>
+
+<p>Even if there is something you have always wanted to experience and can't find it on TutsPro, let us know and we promise we'll do our best to find it for you and send you there.</p>
+            </div>
+            <div class="contents">                
+               
+                <form action="mailto:info@tutspro.com" method="post" id="contactForm">
+                    <label for="name">Name:</label><br/>
+                    <input type="text" name="name" id="name"><br/>
+                    <label for="email">Email:</label><br/>
+                    <input type="email" name="email" id="email"><br/>
+                    <label for="message">Message:</label><br/>
+                    <textarea cols="22" rows="8"></textarea><br/>
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
+             
+                </form>
+                <div class="address">
+                <address>
+                    TutsPro (PVT) Ltd<br/>
+                    Terapivägen 16C<br>
+                    14156, Huddinge<br/>
+                    Stockholm.<br/><br/>
+                    Tel: 08-567 3452<br/>
+                    Mob: 07-034 9784<br/>
+                    Email: info@tutspro.com<br/>
+                    Website: <a href="http://www.tutspro.com" target="_blank" class="site">www.tutspro.com</a>
+                    
+                    
+                </address>
+                
+                
+                </div><!--end of address-->
+                <div class="map">
+                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:200px;width:320px;"><div id="gmap_canvas" style="height:500px;width:600px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">themecircle premium wordpress themes</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(59.2217503,17.94745320000004),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(59.2217503, 17.94745320000004)});infowindow = new google.maps.InfoWindow({content:"<b></b><br/>terapiv&auml;gen 16c<br/> stockholm" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                
+                </div>
+            </div>
+                
+        </div><!--end of main_contents-->
+        
+        <!--Sidebar-->
+        <aside class="sidebar">
+            <div class="sidebar_contents">
+                <input type="text" placeholder="Search">
+                   <span style="display:block; float:left;"><button type="submit"><i class="fa fa-search"></i></button></span>
+            <hr style="clear:both;">
+            </div>
+            
+        <div class="sidebar_contents">
+                <h3>Latest Release!</h3>
+                 <img src="joomla.jpg" alt="Joomla 3" width="220" title="Joomla 3 Development Training" />
+            <h4>Joomla 3 Development Training</h4>
+                 
+           <hr style="clear:both;">
+            </div>
+            <div class="sidebar_contents">
+                <h3>Recently Watched!</h3>
+                <p><iframe width="250" height="180" src="https://www.youtube.com/embed/BIz02qY5BRA"  allowfullscreen></iframe></p> 
+            <h4>Responsive Web Design</h4>
+                
+           <hr style="clear:both;">
+            </div>
+        
+        
+        </aside><!--end of sidebar--> 
+        
+        <!--creating a object with javascript-->
+        <footer>
+            <p>&copy; 2015 TutsPro. All rights reserved.</p>
+
+        </footer>
+
+    </div><!--end of container-->
 </body>
 </html>

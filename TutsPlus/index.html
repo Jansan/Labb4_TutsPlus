@@ -1,82 +1,154 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title>TutsPlus - A Tutorial Portal</title>
+    <title>TutsPro - A Tutorial Portal</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="objects.js"></script>
     <script src="jquery-2.1.4.js"></script>
     <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
 
 
 </head>
+
 <body>
     <div class="container" id="wrapper">
         <header>
             <div id="logo">
-                <h1><span class="tuts">Tuts</span>Plus</h1>
-                <p>A Tutorial World</p>
+                <img src="logo.png" width="200" alt="TutsPro" />
 
             </div>
             <nav>
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="tutorials.html">Tutorials</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
-
-
             </nav>
-        </header> <!--end of header-->
+        </header>
+        <!--end of header-->
         <div id="slideshow">
             <img src="slide1.jpg" width="1200" height="500" />
 
-        </div><!--end of slideshow-->
-        <!--Floated Boxes block1,block2,block3-->
-        <div class="block1" id="tuts">
-            <h3>Tutorials</h3>
-            <p id="details1"></p>
-            <p id="details2"></p>
         </div>
-        <div class="block2">
-            <button onclick="about()"><h3>About TutsPlus</h3></button>
-            <p style="display: none">TutsPlus is founded on 2008 and its provide world class tutorial videos.</p>
+        <!--end of slideshow-->
 
-            <!--jquery works-->
-            <script>
-                $("button").click(function () {
-                    $("p").show("slow");
-                });
-            </script>
+        <div class="main_contents">
+            <h2>Welcome to TutsPro</h2>
 
-        </div>
-        <div class="block3">
-            <h3 title="">Customer Support!</h3>
-            <div id="formDrop">Click here to contact us.</div>
-            <div id="form">
-                <form>
-                    
-                    <input id="name"name="name" placeholder="Name:" /><br/>
-                    
-                    <input id="name" name="name" type="email" placeholder="Email:" /><br />
-                    
-                    <textarea cols="21" rows="2" placeholder="Message:"></textarea><br/>
-                    <button type="submit" value="Submit">Send</button>
+            <div class="contents">
+                <h3>Up and running with Photoshop CC</h3>
+                <img src="photoshopCC.jpg" width="200" alt="photoshop">
+                <p>In this tutorials you will be learning how to design a website with photoshop cc. This course will give you better understanding of photoshop cc for web design and also you will be ready to make some assets for the website design. End of this course you will get an completion certificate. <a href="tutorials.html" class="viewButton">View</a></p>
+            </div>
 
-                </form>
+            <div class="contents">
+                <h3>WordPress Essential Training</h3>
+                <img src="wordpress.jpg" width="200" alt="photoshop">
+                <p>In this tutorials you will be learning how to design a website with wordpress CMS. This course will give you better understanding of wordpress for web design and also you will be ready to make online store and any kind of blog websites. End of this course you will get an completion certificate. <a href="tutorials.html" class="viewButton">View</a></p>
+
+
+
+            </div>
+            <div class="contents">
+                <h3>C# Essential Training</h3>
+                <img src="c_sharp.png" width="200" alt="photoshop">
+                <p>You will be mastering on c# with this tutorials.I'll be teaching you basic of object oriented programming and then we will continue to learn about variables, arrays, methods and more..<a href="tutorials.html" class="viewButton">View</a></p>
+
+
 
             </div>
 
-            <script>
 
-                $(document).ready(function () {
-                    $("#formDrop").click(function () {
-                        $("#form").slideToggle("slow");
+
+
+        </div>
+        <!--end of main_contents-->
+
+        <aside class="sidebar">
+            <div class="sidebar_contents">
+                <input type="text" placeholder="Search">
+                <span style="display:block; float:left;"><button type="submit"><i class="fa fa-search"></i></button></span>
+                <hr style="clear:both;">
+            </div>
+
+            <div class="sidebar_contents">
+                <h3>Latest Release!</h3>
+                <img src="joomla.jpg" alt="Joomla 3" width="220" title="Joomla 3 Development Training" />
+                <h4>Joomla 3 Development Training</h4>
+
+                <hr style="clear:both;">
+            </div>
+            <div class="sidebar_contents">
+                <h3>Recently Watched!</h3>
+                <p>
+                    <iframe width="250" height="180" src="https://www.youtube.com/embed/BIz02qY5BRA" allowfullscreen></iframe>
+                </p>
+                <h4>Responsive Web Design</h4>
+
+                <hr style="clear:both;">
+            </div>
+
+
+        </aside>
+        <!--end of sidebar-->
+
+
+
+
+        <!--Floated Boxes block1,block2,block3-->
+        <div id="bottom_blocks">
+            <div class="block1" id="tuts">
+                <h3>Tutorials</h3>
+                <p id="details1"></p>
+                <p id="details2"></p>
+            </div>
+            <div class="block2">
+                <button onclick="about()">
+                    <h3>About TutsPro</h3></button>
+                <p style="display: none">TutsPro is founded on 2008 and its provide world class tutorial videos.</p>
+
+                <!--jquery works-->
+                <script>
+                    $("button").click(function () {
+                        $("p").show("slow");
                     });
-                });
-            </script>
+                </script>
+
+            </div>
+            <div class="block3">
+                <h3 title="">Customer Support!</h3>
+                <div id="formDrop">Click here to contact us.</div>
+                <div id="form">
+                    <form>
+
+                        <input id="name" name="name" placeholder="Name:" />
+                        <br/>
+
+                        <input id="name" name="name" type="email" placeholder="Email:" />
+                        <br />
+
+                        <textarea cols="21" rows="2" placeholder="Message:"></textarea>
+                        <br/>
+                        <button type="submit" value="Submit">Send</button>
+
+                    </form>
+
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $("#formDrop").click(function () {
+                            $("#form").slideToggle("slow");
+                        });
+                    });
+                </script>
+            </div>
         </div>
 
 
@@ -86,10 +158,12 @@
 
 
         <footer>
-            <p>&copy; 2015 TutsPlus. All rights reserved.</p>
+            <p>&copy; 2015 TutsPro. All rights reserved.</p>
 
         </footer>
 
-    </div><!--end of container-->
+    </div>
+    <!--end of container-->
 </body>
+
 </html>
