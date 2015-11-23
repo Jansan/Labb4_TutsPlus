@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="objects.js"></script>
     <script src="jquery-2.1.4.js"></script>
+	
+    <!--<script src="validation.js"></script>-->
     <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
 
 
@@ -39,17 +41,40 @@
             </div>
             <div class="contact_contents">                
                
-                <form action="mailto:info@tutspro.com" method="post" id="contactForm">
+                <form action="mailto:info@tutspro.com" method="post" id="contactForm" onsubmit="return validateForm()">
                     <label for="name">Name:</label><br/>
-                    <input type="text" name="name" id="name"><br/>
-                    <label for="email">Email:</label><br/>
-                    <input type="email" name="email" id="email"><br/>
+                    <input type="text" name="name" id="name" data-validation="custom" data-validation-regexp="^[a-zA-Z]+(([\'\,\.\-][a-zA-Z])?[a-zA-Z]*)*$"><br/>
+                    <div id="errorName"></div>
+                    <label for="email" id="email">Email:</label><br/>
+                    <input type="text" name="email" id="email" data-validation="email"><br/>
+                    <div id="errorMsg"></div>
                     <label for="message">Message:</label><br/>
-                    <textarea cols="22" rows="8"></textarea><br/>
-                    <button type="submit">Send</button>
+                    <textarea cols="22" rows="8" id="message"></textarea><br/>
+                    <button type="submit" value="Validate">Send</button>
                     <button type="reset">Clear</button>
              
                 </form>
+				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+				<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.43/jquery.form-validator.min.js">				</script>
+				
+				<script>
+
+  $.validate({
+    modules : 'location, date, security, file',
+    onModulesLoaded : function() {
+      $('#country').suggestCountry();
+    }
+  });
+
+  // Restrict presentation length
+  $('#presentation').restrictLength( $('#pres-max-length') );
+
+</script>
+				
+				
+				
+				
+				
                 <div class="address">
                 <address>
                     TutsPro (PVT) Ltd<br/>

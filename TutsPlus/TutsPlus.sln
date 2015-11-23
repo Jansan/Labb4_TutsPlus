@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		about.html = about.html
 		animation.js = animation.js
+		contactus.html = contactus.html
 		index.html = index.html
 		..\..\..\..\Downloads\jquery-2.1.4.js = ..\..\..\..\Downloads\jquery-2.1.4.js
 		slide1.jpg = slide1.jpg
 		style.css = style.css
 		tutorials.html = tutorials.html
+		validation.js = validation.js
 		..\..\..\..\Downloads\videot.png = ..\..\..\..\Downloads\videot.png
 		..\..\..\..\Downloads\videou.png = ..\..\..\..\Downloads\videou.png
 	EndProjectSection

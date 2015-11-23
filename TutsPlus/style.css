@@ -24,7 +24,7 @@
     h3,
     h4,
     h5 {
-        color: rgb(3, 58, 60);
+        color: rgb(10, 161, 167);
     }
     #logo {
         width: 20%;
@@ -181,26 +181,43 @@
         padding: 5px;
         float: left;
         height: 200px;
-        background: cadetblue;
+        background: #215557;
+		border-radius:10px 0 10px 0;
         margin-left: 15px;
         margin-top: 20px;
         text-align: center;
         margin-bottom: 20px;
         font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
     }
+.block2 button {
+	width: 100%;
+	background: rgba(10, 161, 167,0.3);
+	border-radius: 20px;
+	border:0;
+	
+}
     .block3 {
         float: left;
         width: 30.83%;
         padding: 5px;
         height: 200px;
-        background: cadetblue;
+        background: #215557;
+		border-radius:10px 0 10px 0;
         margin-right: 15px;
         margin-left: 15px;
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: center;
         font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+		box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
     }
+
+		#bottom_blocks h3 {
+			font-size: 24px;
+		}
     .banner {
         clear: both;
         max-width: 460px;
